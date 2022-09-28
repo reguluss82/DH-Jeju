@@ -46,7 +46,7 @@
 						<span
 							class="CommonIconSet__InitialIcon-sc-15eoam-0 CommonIconSet__MagnifierGrayIconContent-sc-15eoam-1 jZNHYY QjNCN"></span>
 						<button></button>
-						<input placeholder="동행을 찾아보세요!" value="">
+						<input placeholder="동행을 찾아보세요!" onfocus="this.placeholder = ''" onblur="this.placeholder = '동행을 찾아보세요!'" value="">
 					</div>
 					<div class="Button__ButtonWrapper-sc-1vcxcg6-0 oIYRb">
 						<button width="" height="" font-style="" type="button"
@@ -90,7 +90,7 @@
 					class="ButtonWithToggle__ButtonWrapper-sc-12hyxzf-0 cFXvdc"
 					onClick="location.href='list.jsp'">Q&amp;A</button>
 				<button width="auto" font-size="16px" font-weight="400"
-					class="ButtonWithToggle__ButtonWrapper-sc-12hyxzf-0 cFXvdc"
+					class="ButtonWithToggle__ButtonWrapper-sc-12hyxzf-0 cFXvdv"
 					onClick="location.href='history.jsp'">여행 기록</button>
 			</div>
 		</div>

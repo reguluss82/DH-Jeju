@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">	
-<title>Insert title here</title>
+<title>게시글수정</title>
 <link
 	href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
 	rel="stylesheet">
@@ -99,7 +99,7 @@
 	
 <!-- main start -->
 	<div style="margin-top: 148px;">
-		<section class=" container-fluid py-5 text-center bg-img" style="height:300px; background-image: url('images/bgimg.jpg');">
+		<section class=" container-fluid py-5 text-center bg-img" style="height:300px; background-image: url('images/commImages/bgimg.jpg');">
 			<div class="mt-5 row">
 				<div class="col">
 					<p class="mt-2 text-white">자유롭게 당신의 일상을 공유하세요</p>
@@ -114,7 +114,7 @@
 					<input type="file" class="custom-file-input"  id="validatedCustomFile" required style="display: none; margin: 0px; padding: 0px;">
 					<label class="custom-file-label" for="validatedCustomFile">
 						<!-- <img class="img-thumbnail" src="images/bgimg.jpg"> -->
-						<svg class="bd-placeholder-img card-img-top" width="100%" height="300px;" xmlns="" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="37%" y="50%" fill="#eceeef" dy=".3em"><i class="bi bi-images"></i></text></svg>
+						<svg class="bd-placeholder-img card-img-top" width="100%" height="300px;" xmlns="" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="45%" y="50%" fill="#eceeef" dy=".3em">사진 업로드</text></svg>
 					</label>
 					<div class="invalid-feedback">Example invalid custom file feedback</div>
 				</div>
@@ -123,7 +123,15 @@
 					<textarea class="form-control mt-5" id="exampleFormControlTextarea1" rows="9" placeholder="게시글 내용을 입력하세요"></textarea>
 				</div>
 				<div class="form-group">
-					<textarea class="form-control mt-5" id="exampleFormControlTextarea1" rows="1" pr="태그를 입력하세요. 입력 예시 : #제주도#음식#카페"></textarea>
+					<textarea class="form-control mt-5" id="exampleFormControlTextarea1" rows="1" placeholder="태그를 입력하세요. 입력 예시 : #제주도#음식#카페"></textarea>
+				</div>
+				<div class="mt-5 row">
+					<div class="col-md-6">
+						<button type="reset" class="btn btn-secondary btn-block" style="width: 100%; height: 50px;">취소</button>
+					</div>
+					<div class="col-md-6">
+						<button type="submit" class="btn btn-success btn-block" style="width: 100%;  height: 50px;">확인</button>
+					</div>
 				</div>
 			</form>
 			

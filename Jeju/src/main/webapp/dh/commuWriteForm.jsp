@@ -97,8 +97,9 @@
 		</div>
 	</header>
 	
-	<main style="margin-top: 148px;">
-		<section class=" container-fluid py-5 text-center bg-img" style="height:300px; background-image: url('images/bgimg.jpg');">
+<!-- main start -->
+	<div style="margin-top: 148px;">
+		<section class=" container-fluid py-5 text-center bg-img" style="height:300px; background-image: url('images/commImages/bgimg.jpg');">
 			<div class="mt-5 row">
 				<div class="col">
 					<p class="mt-2 text-white">자유롭게 당신의 일상을 공유하세요</p>
@@ -106,110 +107,36 @@
 				</div>
 			</div>	
 		</section>
-		
-		<section class="container">
-			<div class="row m-5 justify-content-md-center">	
-			<div	
-					class="col-md-auto Search__SearchInputWrappper-sc-1ef83fv-0 beOSqn">
-					<span
-					class="CommonIconSet__InitialIcon-sc-15eoam-0 CommonIconSet__MagnifierGrayIconContent-sc-15eoam-1 jZNHYY QjNCN" style="margin-left: 5px;"></span>
-					<button style="margin-left: 10px;"></button>
-					<input placeholder="동행을 찾아보세요!" value="">
+		<div class="row m-5 justify-content-md-center">
+			<form>
+				<div class="custom-file row">
+	         <!-- 	<input type="file" class="custom-file-input" id="validatedCustomFile" required> -->
+					<input type="file" class="custom-file-input"  id="validatedCustomFile" required style="display: none; margin: 0px; padding: 0px;">
+					<label class="custom-file-label" for="validatedCustomFile">
+						<!-- <img class="img-thumbnail" src="images/bgimg.jpg"> -->
+						<svg class="bd-placeholder-img card-img-top" width="100%" height="300px;" xmlns="" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="45%" y="50%" fill="#eceeef" dy=".3em">사진 업로드</text></svg>
+					</label>
+					<div class="invalid-feedback">Example invalid custom file feedback</div>
 				</div>
-			</div>	
-			<div class="row m-5 justify-content-md-center">	
 				
-				<div class="col-md-auto">
-					<div class="card shadow-sm">
-						<div class="card-header d-flex">
-							<img class="mt-1 mb-1 img-fluid rounded-circle" alt="회원이미지" src="images/user.png" style="height: 30px; margin-right: 5px;">
-							<span class="mt-2">회원아이디</span>
-							<!-- dropdown menu는 작성자만 보일수있게! -->
-							<div class="dropdown ms-auto">
-						  		<button class="btn btn-icon-only" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-						  			<span class="bi bi-three-dots-vertical"></span>
-						  		</button>
-						  		<ul class="dropdown-menu">
-						    		<li><a class="dropdown-item" href="#">수정</a></li>
-						   			<li><a class="dropdown-item" href="#">삭제</a></li>
-						  		</ul>
-							</div>
-						</div>
-						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="rounded card-img-top" src="images/5_2.jpg"></button>
-						
-						<div class="card-body d-flex">
-							<p class="card-text">본문내용</p>
-							
-						</div>
-						<div class="card-footer d-flex">
-							<p class="mt-2">#태그 #태그 #태그</p>
-							<span class="ms-auto mt-2">작성날짜</span>
-						</div>
+				<div class="form-group">
+					<textarea class="form-control mt-5" id="exampleFormControlTextarea1" rows="9" placeholder="게시글 내용을 입력하세요"></textarea>
+				</div>
+				<div class="form-group">
+					<textarea class="form-control mt-5" id="exampleFormControlTextarea1" rows="1" placeholder="태그를 입력하세요. 입력 예시 : #제주도#음식#카페"></textarea>
+				</div>
+				<div class="mt-5 row">
+					<div class="col-md-6">
+						<button type="reset" class="btn btn-secondary btn-block" style="width: 100%; height: 50px;">취소</button>
+					</div>
+					<div class="col-md-6">
+						<button type="submit" class="btn btn-success btn-block" style="width: 100%;  height: 50px;">확인</button>
 					</div>
 				</div>
-			</div>
+			</form>
 			
-			<!-- Button trigger modal -->
-<button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  닉네임
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      
-      <div class="modal-body">
-       <div class="card shadow-sm">
-						<div class="card-header d-flex">
-							<img class="mt-1 mb-1 img-fluid rounded-circle" alt="회원이미지" src="images/user.png" style="height: 30px; margin-right: 5px;">
-							<span class="mt-2">회원아이디</span>
-							<!-- dropdown menu item 클릭시 작성자 : 선택한 페이지 이동, else alert "작성한 아이디로 로그인하세요."-->
-							<div class="dropdown ms-auto">
-						  		<button class="btn btn-icon-only" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-						  			<span class="bi bi-three-dots-vertical"></span>
-						  		</button>
-						  		<ul class="dropdown-menu">
-						    		<li><a class="dropdown-item" href="#">수정</a></li>
-						   			<li><a class="dropdown-item" href="#">삭제</a></li>
-						  		</ul>
-							</div>
-						</div>
-						<img class="btn card-img-top" src="images/5_2.jpg">
-						
-						<div class="card-body d-flex">
-							<p class="card-text">본문내용</p>
-							
-						</div>
-						<div class="card-footer d-flex">
-							<p class="mt-2">#태그 #태그 #태그</p>
-							<span class="ms-auto mt-2">작성날짜</span>
-						</div>
-					</div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-			
-			<div class="row m-5 justify-content-md-center">
-				<div class="col-md-auto">
-					<div class="card shadow-sm">
-						<div class="card-header d-flex">
-							<img class="mt-1 mb-1 img-fluid rounded-circle" alt="회원이미지" src="images/user.png" style="height: 30px; margin-right: 5px;">
-							<span class="mt-2">회원아이디</span> <span class="ms-auto mt-2">작성날짜</span>
-						</div>
-						<img class="card-img-top" src="images/5_2.jpg">	
-						<div class="card-body">
-							<p class="card-text">본문내용</p>
-							<p>#태그 #태그 #태그</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-	
+		</div>
+	</div>
 	<footer class="py-5 bg-dark" style="margin-top: 100px;">
 		<div class="container">
 			<p class="m-0 text-center text-white">Copyright &copy; Your
