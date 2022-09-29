@@ -101,7 +101,7 @@
 <!-- main start -->	
 	<main style="margin-top: 148px;">
 		<!-- main 상단 고정이미지 -->
-		<section class=" container-fluid py-5 text-center bg-img" style="height:300px; background-image: url('images/commImages/bgimg.jpg');">
+		<section class=" container-fluid py-5 text-center bg-img" style="height:300px; background-image: url('dh_images/bgimg.jpg');">
 			<div class="mt-5 row">
 				<div class="col">
 					<p class="mt-2 text-white">자유롭게 당신의 일상을 공유하세요</p>
@@ -128,7 +128,7 @@
 						<div class="col-md-auto">
 							<div class="card shadow-sm">
 								<div class="card-header d-flex">
-									<img class="mt-1 mb-1 img-fluid rounded-circle" alt="회원이미지" src="images/commImages/user.png" style="height: 30px; margin-right: 5px;">
+									<img class="mt-1 mb-1 img-fluid rounded-circle" alt="회원이미지" src="dh_images/user.png" style="height: 30px; margin-right: 5px;">
 									<span class="mt-2">${commu.user_id }</span>
 									<!-- dropdown menu는 작성자만 수정 삭제 접근가능, else alert("작성자만 수정 삭제 가능합니다.") -->
 									<div class="dropdown ms-auto">
@@ -141,7 +141,7 @@
 								  		</ul>
 									</div>
 								</div>
-								<button type="button" class="" data-bs-toggle="modal" data-bs-target=".bd-modal-xl"><img class="rounded card-img-top" src="images/commImages/5_2.jpg"></button>
+								<button type="button" class="" data-bs-toggle="modal" data-bs-target=".bd-modal-xl"><img class="rounded card-img-top" src="dh_images/5_2.jpg"></button>
 								
 								<div class="card-body d-flex">
 									<p class="card-text">${commu.c_content }</p>
@@ -159,7 +159,7 @@
 								<div class="modal-content">
 									<div class="modal-header">
 										<div class="modal-title d-flex">
-											<img class="mt-1 mb-1 img-fluid rounded-circle" alt="회원이미지" src="images/commImages/user.png" style="height: 30px; margin-right: 5px;">
+											<img class="mt-1 mb-1 img-fluid rounded-circle" alt="회원이미지" src="dh_images/user.png" style="height: 30px; margin-right: 5px;">
 											<span class="mt-2">${commu.user_id }</span>
 											<!-- dropdown menu는 작성자만 수정 삭제 접근가능, else alert("작성자만 수정 삭제 가능합니다.") -->
 											<div class="dropdown ms-auto">
@@ -178,7 +178,7 @@
 								        </button>
 								    </div>
 								    <div class="modal-body container justify-content-md-center">
-								    	<div class="row"> <img class="rounded" src="images/commImages/5_2.jpg"></div>
+								    	<div class="row"> <img class="rounded" src="dh_images/5_2.jpg"></div>
 								    </div>
 								    <div class="modal-footer">
 									    <div class="container">
