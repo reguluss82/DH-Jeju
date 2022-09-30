@@ -182,7 +182,7 @@ console.log(count);
 							</div>
 					    </div>
 						<!-- end modal -->
-						<!-- Call LoginForm.jsp Script -->
+						<!-- Call modalContent.jsp Script -->
 						<script>
 							$('.bd-modal-xl').on('show.bs.modal', function(e) {
 						

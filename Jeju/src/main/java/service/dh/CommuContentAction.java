@@ -1,6 +1,7 @@
 package service.dh;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -22,11 +23,13 @@ public class CommuContentAction implements CommandProcess {
 		
 		try {
 			CommuDao cd = CommuDao.getInstance();
-			Commu commu = cd.select(c_num);
-			
-			request.setAttribute("c_num", c_num);
+			Commu                commu   = cd.select(c_num);
+			List<Commu.CommuImg> imgList = cd.selectImg(c_num);
+			request.setAttribute("c_num"  , c_num);
 			request.setAttribute("pageNum", pageNum);
-			request.setAttribute("commu", commu);
+			request.setAttribute("commu"  , commu);
+			request.setAttribute("imgList", imgList);
+			System.out.println("imgList->" + imgList);
 		} catch (Exception e) {
 			System.out.println("select, set try" + e.getMessage());
 		}

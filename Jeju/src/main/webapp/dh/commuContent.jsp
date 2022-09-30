@@ -1,11 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<% 
+String context = request.getContextPath();
+%>
 <body>
 									<div class="modal-header">
 										<div class="modal-title d-flex">
@@ -28,7 +33,9 @@
 								        </button>
 								    </div>
 								    <div class="modal-body container justify-content-md-center">
-								    	<div class="row"> <img class="rounded" src="dh_images/5_2.jpg"></div>
+								    	<c:forEach var="image" items="${imgList }">
+								    		<div class="row"> <img class="rounded" src="<%=context %>/${image.c_img_path }"></div>
+								    	</c:forEach>
 								    </div>
 								    <div class="modal-footer">
 									    <div class="container">
